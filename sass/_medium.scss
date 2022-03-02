@@ -1,0 +1,26 @@
+@media screen and (min-width: 550px) {
+  .menu {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    &__buttons {
+      i {
+        display: inline-block;
+        margin-right: 0.5em;
+        margin-bottom: 0em;
+      }
+    }
+    &__heading {
+      margin-bottom: 0em;
+    }
+  }
+
+  .noteArea {
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 640px) {
+  .notePanel {
+    width: 600px;
+  }
+}

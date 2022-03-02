@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notebook</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Dancing+Script|Montserrat:400,700&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/ce1ab2aef5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="menu">
+      <h1 class="menu__heading"><i class="fas fa-sticky-note"></i>My Notes</h1>
+      <div class="menu__buttons">
+        <button class="menu__buttons-add icon">
+          <i class="fas fa-plus"></i>Add
+        </button>
+        <button class="menu__buttons-deleteAll icon">
+          <i class="fas fa-trash-alt"></i>Delete All
+        </button>
+      </div>
+    </div>
+
+    <div class="noteArea">
+      <!-- <div class="noteArea__note">
+        <div class="noteArea__note-noteHeader">
+          <h3 class="noteArea__note-noteHeader-noteTitle">Notatka #1</h3>
+          <button class="noteArea__note-noteHeader-deleteNote icon">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="noteArea__note-noteBody">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+      </div>
+      <-->
+    </div>
+
+    <div class="notePanel">
+      <h2 class="notePanel__addNote">Add note</h2>
+      <label for="category">Choose category</label>
+      <select id="category" onchange="selectValue()">
+        <option value="0" disabled selected>- choose category -</option>
+        <option value="1">Shooping</option>
+        <option value="1">Work</option>
+        <option value="1">Different</option>
+      </select>
+
+      <label for="text">Type your note text</label>
+      <textarea id="text"></textarea>
+
+      <p class="notePanel__error">Please complete all fields!</p>
+
+      <div class="notePanel__buttons">
+        <button class="notePanel__buttons-save icon">
+          <i class="fas fa-save"></i> Save
+        </button>
+        <button class="notePanel__buttons-cancel icon">
+          <i class="fas fa-window-close"></i> Cancel
+        </button>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

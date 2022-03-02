@@ -1,0 +1,18 @@
+.icon {
+  margin-right: 0.5em;
+}
+
+button {
+  padding: 0.7em 1.5em;
+  background: none;
+  border: var(--border-button-color);
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: var(--white-color);
+  transition: background-color 0.4s, color 0.4s;
+
+  &:hover {
+    background-color: var(--hover-back-color-button);
+  }
+}

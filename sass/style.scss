@@ -1,0 +1,121 @@
+@import "./colors";
+@import "./components";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--back-color);
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3em;
+  background-color: var(--back-color-menu);
+  &__buttons {
+    i {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 0.5em;
+    }
+  }
+  &__heading {
+    color: var(--white-color);
+    margin-bottom: 1em;
+  }
+}
+
+.noteArea {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 1em;
+  &__note {
+    margin: 2em 1em;
+    width: 230px;
+    border: var(--border-note-color);
+    &-noteHeader {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 20px;
+      background-color: rgba($color: #000000, $alpha: 0.07);
+
+      &-deleteNote {
+        display: flex;
+        background: none;
+        font-size: 1rem;
+        border: none;
+        cursor: pointer;
+        padding: 0.5em 1em;
+      }
+    }
+
+    &-noteBody {
+      padding: 1em 1.5em;
+      font-size: 1rem;
+      overflow-wrap: break-word;
+    }
+  }
+
+  .icon {
+    margin-right: 0px;
+  }
+}
+
+.notePanel {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2em;
+  width: 95%;
+  background-color: var(--back-panel-color);
+  box-shadow: var(--panel-box-shadow);
+  border-radius: 5px;
+
+  &__addNote {
+    color: var(--panel-heading-color);
+    margin-bottom: 1em;
+    text-transform: uppercase;
+  }
+
+  label {
+    color: var(--white-color);
+    margin-bottom: 0.8em;
+  }
+
+  #category,
+  #text {
+    margin-bottom: 1.2em;
+    padding: 0.5em 1em;
+    width: 100%;
+    max-width: 90%;
+    max-height: 600px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: var(--label-border-color);
+  }
+
+  &__error {
+    margin-bottom: 1.2em;
+    color: var(--error-color);
+    visibility: hidden;
+  }
+}
+
+@import "./medium";
