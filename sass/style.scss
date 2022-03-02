@@ -58,6 +58,18 @@ body {
         border: none;
         cursor: pointer;
         padding: 0.5em 1em;
+
+        .fas {
+          transition: transform 1s;
+        }
+
+        &:hover .fas {
+          transform: rotate(180deg);
+        }
+
+        &:hover {
+          background-color: var(--button-note-hover);
+        }
       }
     }
 

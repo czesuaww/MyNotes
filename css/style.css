@@ -126,6 +126,22 @@ body {
   padding: 0.5em 1em;
 }
 
+.noteArea__note-noteHeader-deleteNote .fas {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.noteArea__note-noteHeader-deleteNote:hover .fas {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.noteArea__note-noteHeader-deleteNote:hover {
+  background-color: var(--button-note-hover);
+}
+
 .noteArea__note-noteBody {
   padding: 1em 1.5em;
   font-size: 1rem;
